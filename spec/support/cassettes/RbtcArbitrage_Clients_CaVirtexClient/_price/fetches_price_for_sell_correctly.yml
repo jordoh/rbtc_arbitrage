@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.cavirtex.com/api/CAD/ticker.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 28 Feb 2014 23:51:56 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4153938b23a88aaebdddcf08745575cd1393631515907; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.cavirtex.com; HttpOnly
+      - sessionid=a53dfd800a3e9d06d97dca60af3440c6; expires=Sat, 01-Mar-2014 03:51:55
+        GMT; httponly; Max-Age=14400; Path=/; secure
+      Vary:
+      - Cookie,Accept-Encoding
+      Cf-Ray:
+      - 1041068e61dd071f-SJC
+    body:
+      encoding: UTF-8
+      string: '{"high": 629.400000000, "volume": 373.912700000, "last": 609.900000000,
+        "low": 595.000000000}'
+    http_version: 
+  recorded_at: Fri, 28 Feb 2014 23:51:55 GMT
+recorded_with: VCR 2.8.0
