@@ -31,5 +31,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "bitstamp"
   spec.add_dependency "coinbase", '1.3.0'
   spec.add_dependency "simple_currency"
+  spec.add_dependency "stathat"
   spec.add_dependency "pony"
 end

@@ -5,6 +5,8 @@ require 'bitstamp'
 require 'btce'
 require 'coinbase'
 require 'pony'
+require 'simple_currency'
+require 'stathat'
 require_relative 'rbtc_arbitrage/client.rb'
 Dir["#{File.dirname(__FILE__)}/rbtc_arbitrage/**/*.rb"].each { |f| require(f) }
 

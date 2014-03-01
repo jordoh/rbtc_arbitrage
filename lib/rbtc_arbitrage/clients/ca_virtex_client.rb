@@ -1,5 +1,3 @@
-require 'simple_currency'
-
 module RbtcArbitrage
   module Clients
     class CaVirtexClient
