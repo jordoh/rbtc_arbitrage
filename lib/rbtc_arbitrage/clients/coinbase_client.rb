@@ -25,7 +25,7 @@ module RbtcArbitrage
 
       # Configures the client's API keys.
       def validate_env
-        validate_keys :coinbase_key, :coinbase_address
+        validate_keys :coinbase_key, :coinbase_api_secret, :coinbase_address
       end
 
       # `action` is :buy or :sell
@@ -47,7 +47,7 @@ module RbtcArbitrage
       end
 
       def interface
-        @interface ||= Coinbase::Client.new(ENV['COINBASE_KEY'])
+        @interface ||= Coinbase::Client.new(ENV['COINBASE_KEY'], ENV['COINBASE_API_SECRET'])
       end
 
       def address
