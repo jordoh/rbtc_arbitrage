@@ -1,3 +1,5 @@
+require 'simple_currency'
+
 module RbtcArbitrage
   module Clients
     class CaVirtexClient
@@ -32,7 +34,7 @@ module RbtcArbitrage
         @price ||= begin
           response = HTTParty.get('https://www.cavirtex.com/api/CAD/ticker.json')
           prices = JSON.load(response.parsed_response)
-          prices['last']
+          prices['last'].to_f.cad.to_usd
         end
       end
 
